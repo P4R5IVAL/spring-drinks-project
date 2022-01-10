@@ -40,7 +40,7 @@ public class DrinkController {
 	}
 	
 	//Read By Id 
-	@GetMapping("ReadById{id}")
+	@GetMapping("/ReadById/{id}")
 	public ResponseEntity<Drink>readDrinkById(@PathVariable long id){
 		return new ResponseEntity<Drink>(this.service.getById(id), HttpStatus.OK);
 	}
