@@ -1,0 +1,1 @@
+INSERT INTO drink(brand, colour, age) VALUES ( 'sprite', 'white',3);

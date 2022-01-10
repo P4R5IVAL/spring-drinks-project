@@ -77,7 +77,6 @@ public class Drink {
 		result = prime * result + (int) (age ^ (age >>> 32));
 		result = prime * result + ((brand == null) ? 0 : brand.hashCode());
 		result = prime * result + ((colour == null) ? 0 : colour.hashCode());
-		result = prime * result + (int) (id ^ (id >>> 32));
 		return result;
 	}
 	@Override
@@ -101,10 +100,9 @@ public class Drink {
 				return false;
 		} else if (!colour.equals(other.colour))
 			return false;
-		if (id != other.id)
-			return false;
 		return true;
 	}
+
 	
 	
 
